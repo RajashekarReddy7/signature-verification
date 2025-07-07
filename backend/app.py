@@ -9,10 +9,10 @@ from flask_cors import CORS  # Import CORS to handle cross-origin requests
 app = Flask(__name__)
 CORS(app)  # Enable CORS
 
-app.config['UPLOAD_FOLDER'] = 'C:/Users/ragha/OneDrive/Desktop/SignatureVerification/backend/uploads/'
+app.config['UPLOAD_FOLDER'] = 'C:/Users/Rajashekar Reddy/OneDrive/Documents/Desktop/SignatureVerification/backend/uploads'
 
 # Load pre-trained model
-model = load_model('C:/Users/ragha/OneDrive/Desktop/SignatureVerification/cnn_model/signature_verification_cnn_model.h5')
+model = load_model('C:/Users/Rajashekar Reddy/OneDrive/Documents/Desktop/SignatureVerification/cnn_model/signature_verification_cnn_model.h5')
 
 @app.route('/verify', methods=['POST'])
 def verify_signature():
